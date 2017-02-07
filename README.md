@@ -7,7 +7,8 @@
 ### 4、本系统的数据库连接方式使用了mysqli，所以php版本给予5.3及以上版本。
 
 ## 使用方法及配置、安装数据库
-### 1、数据库的安装：
+数据库的安装：
+
     请先搭建一个phpMyAdmin环境，方便后续登录数据库进行sql语句操作。
     搭建完成后请进入某空闲数据库，执行建表sql指令：
     ```
@@ -18,8 +19,10 @@
     ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
     insert into wifi.users(userid,userpass) values("admin","password123123123");
     ```
-### 2、上述建表过程中最后一行代码末尾处的admin和password123123123就是首个上网认证新用户的用户名和密码！
-### 3、配置conn.php
+上述建表过程中最后一行代码末尾处的admin和password123123123就是首个上网认证新用户的用户名和密码！
+
+配置conn.php系统配置文件：
+
     编辑conn.php文件，修改对应数据库配置信息。使php程序可以与后端的mysql数据库以及wifidog交互、查询、更新数据。这里举一个例子：
     ```
     <?php
