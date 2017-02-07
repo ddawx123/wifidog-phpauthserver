@@ -1,1 +1,1 @@
-#wifidog-phpauthserver
+#基于wifidog的web上网认证系统-PHPVersion
